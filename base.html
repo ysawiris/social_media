@@ -5,9 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel='stylesheet' href='https://bootswatch.com/4/minty/bootstrap.min.css'>
-    <title>Coptic Media</title>
 
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- BOOTSTRAP THEME -->
+    <link rel='stylesheet' href='https://bootswatch.com/4/minty/bootstrap.min.css'>
+
+    <!-- CUSTOM STYLES -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--Bootstrap JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <title>Coptic Media</title>
 
 </head>
 
@@ -15,8 +29,12 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow p-3 mb-5">
         <a class="navbar-brand" href="#">Coptic Media</a>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <form class="form-inline mx-auto">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="signup collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="form-inline mx-auto">
                 <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
                 <div class="input-group mb-2 mr-sm-2">
                     <div class="input-group-prepend">
@@ -27,8 +45,8 @@
 
                 <label class="sr-only" for="inlineFormInputName2">Password</label>
                 <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Password">
-                <div class="btn-group-vertical btn-sm" role="group">
-                    <button type="submit" class="btn btn-secondary btn-sm"><a class="btn-secondary" href="/Users/ysawiris/dev/social_media/profile.html">Login</a></button>
+                <div class="btn-group-vertical btn-sm align-items-center" role="group">
+                    <a href="/Users/ysawiris/dev/social_media/profile.html"><button type="submit" class="btn btn-secondary btn-md">Login</button></a>
                     <div class="form-check mr-sm-1">
                         <input class="form-check-input" type="checkbox" id="inlineFormCheck">
                         <label class="form-check-label" for="inlineFormCheck">
@@ -36,7 +54,7 @@
                         </label>
                     </div>
                 </div>
-            </form>
+            </div>
 
         </div>
     </nav>
@@ -145,7 +163,7 @@
 
                         <p class="text-muted ">By clicking Sign Up, you agree to our Terms, Data Policy and Cookies Policy. You may receive SMS Notifications from us and can opt out any time.</p>
                         <p class="lead ">
-                            <a class="btn btn-primary btn-md m-sm-2 " href="#! " role="button ">Sign Up </a>
+                            <a class="btn btn-primary btn-md m-sm-2 " href="/Users/ysawiris/dev/social_media/newsfeed.html" role="button ">Sign Up </a>
                         </p>
                         <hr class="my-2 ">
                         <p>Create a Page for a church, church leader or non-profit!</p>
@@ -153,6 +171,11 @@
                 </div>
             </div>
         </div>
+    </div>
+
+
+    <div class="footer bg-secondary p-5">
+        <img class="nav-logo" src="/tea/tea&logo.jpg" style="height: 35px;"> &copy; 2019
     </div>
 
 

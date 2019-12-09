@@ -31,3 +31,12 @@
 .align-items-center {
     align-items: center!important;
 }
+
+.signup {
+    position: absolute;
+    right: 25px;
+}
+
+.footer {
+    text-align: center;
+}

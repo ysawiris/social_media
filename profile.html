@@ -15,44 +15,67 @@
     <!-- CUSTOM STYLES -->
     <link rel="stylesheet" href="styles.css">
 
+    <!--Bootstrap JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
     <title>Coptic Media</title>
 
 </head>
 
 <body bg-light>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow p-3 mb-5">
-        <div class="btn-group-fluid btn-group-md rounded" role="group " aria-label="Basic example">
-            <button type="button" class="bar btn btn-info ">Home</button>
-            <button type="button" class="bar btn btn-info ">Events</button>
-            <button type="button" class="bar btn btn-info ">Notifications</button>
-            <button type="button" class="bar btn btn-info">Settings</button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow p-3 mb-3">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+        <div class="collapse navbar-collapse navbarContent">
+            <div class="btn-group-fluid btn-group-md rounded" role="group " aria-label="Basic example">
+                <a href="/Users/ysawiris/dev/social_media/newsfeed.html"><button type="button" class="bar btn btn-info ">Home</button></a>
+                <button type="button" class="bar btn btn-info ">Profile</button>
+                <button type="button" class="bar btn btn-info ">Notifications</button>
+                <button type="button" class="bar btn btn-info">Settings</button>
+            </div>
         </div>
         <a class="brand navbar-brand" href="#">Coptic Media</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        <div class="logout collapse navbar-collapse navbarContent">
+            <div class="btn-group-fluid btn-group-md rounded" role="group " aria-label="Basic example">
+                <div class="row align-items-center">
+                    <div class="form-inline p-1">
 
-        <div class="logout btn-group-vertical btn-sm" role="group">
-            <button type="submit" class="btn btn-danger btn-sm">LogOut</button>
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+
+                    </div>
+                    <a href="/Users/ysawiris/dev/social_media/base.html"><button type="submit" class="btn btn-danger btn-sm">LogOut</button></a>
+                </div>
+            </div>
+
+        </div>
         </div>
 
     </nav>
 
-    <div class="container rounded" style="height: 300px; background:transparent url('profile_cover.png') no-repeat center center /cover">
-        <div class="tests col-sm-12">
-            <div class="profile row" style="margin-left: 25; padding-bottom: 15px;">
-                <div class="col-sm-6">
+    <div class="col-sm-12 rounded" style="height: 300px; background:transparent url('profile_cover.png') no-repeat center center /cover">
+        <div class="col-sm-12 m-1">
+            <div class="profile row" style="margin: 25px; padding-bottom: 15px;">
+                <div class="col-sm-6 p-3">
                     <div class=" card" style="background: transparent; border: 0px;">
                         <div class="row">
-                            <img class="card-img-top " src="/Users/ysawiris/dev/social_media/kuz-profile.jpeg " style="width: 150px; " alt="Card image cap ">
+                            <img class="card-img-top " src="/Users/ysawiris/dev/social_media/kuz-profile.jpeg " style="width: 25%; " alt="Card image cap ">
                             <div class="card-body" style="color: black;">
                                 <h4>Kyle Kuzma</h4>
+                                <p class="text-muted">San Francisco Bay Area</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="test col-sm-6">
-                    <div class=" btn-group btn-group-lg " role="group " aria-label="Basic example ">
+                <div class="test col-sm-6 p-3" style="text-align: center;">
+                    <div class=" btn-group btn-group-md " role="group " aria-label="Basic example ">
                         <button type="button " class="btn btn-secondary ">Friends</button>
                         <button type="button " class="btn btn-secondary ">Photos</button>
                         <button type="button " class="btn btn-secondary ">Videos</button>
@@ -163,6 +186,10 @@
 
         </div>
 
+    </div>
+
+    <div class="footer bg-secondary p-5">
+        <img class="nav-logo" src="/tea/tea&logo.jpg" style="height: 35px;"> &copy; 2019
     </div>
 
 </body>
