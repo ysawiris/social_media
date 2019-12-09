@@ -19,15 +19,21 @@
 
 </head>
 
-<body>
+<body bg-light>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow p-3 mb-5">
-        <a class="navbar-brand" href="#">Coptic Media</a>
+        <div class="btn-group-fluid btn-group-md rounded" role="group " aria-label="Basic example">
+            <button type="button" class="bar btn btn-info ">Home</button>
+            <button type="button" class="bar btn btn-info ">Events</button>
+            <button type="button" class="bar btn btn-info ">Notifications</button>
+            <button type="button" class="bar btn btn-info">Settings</button>
+        </div>
+        <a class="brand navbar-brand" href="#">Coptic Media</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-        <div class="btn-group-vertical btn-sm" role="group">
-            <button type="submit" class="btn btn-secondary btn-sm">Login</button>
+        <div class="logout btn-group-vertical btn-sm" role="group">
+            <button type="submit" class="btn btn-danger btn-sm">LogOut</button>
         </div>
 
     </nav>
@@ -55,6 +61,108 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="posts container">
+        <div class="row">
+            <div class="col-md-6 pt-5">
+                <div class="card">
+                    <div class="card-header">
+                        <ul class="list-group list-group-horizontal justify-content-center">
+                            <li class="list-group-item">Create a Post</li>
+                            <li class="list-group-item">Photo/Video</li>
+                            <li class="list-group-item">Live Video</li>
+                        </ul>
+
+                    </div>
+                    <div class="card-body">
+                        <textarea rows="5" cols="60"></textarea>
+                        <p class="card-text ">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+                <div class="photos container">
+                    <h3>FavoritePhotos</h3>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="/Users/ysawiris/dev/social_media/kuz-profile.jpeg">
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="/Users/ysawiris/dev/social_media/kuz-profile.jpeg">
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="/Users/ysawiris/dev/social_media/kuz-profile.jpeg">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="/Users/ysawiris/dev/social_media/kuz-profile.jpeg">
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="/Users/ysawiris/dev/social_media/kuz-profile.jpeg">
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="/Users/ysawiris/dev/social_media/kuz-profile.jpeg">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-md-6 pt-2 ">
+                <div class="newsfeed container ">
+                    <h4>News Feed</h4>
+                    <!-- col- elements here -->
+                    <div class="card " style="width: 500px;">
+                        <div class="row " style="margin: 0; padding: 10px;">
+                            <img class="rounded-circle " style="height: 75px; padding: 5px; " src="/Users/ysawiris/dev/social_media/kuz-profile.jpeg " alt="Circle image ">
+                            <div class="col-sm-8 ">
+                                <h5 class="text-dark " style="margin: 0; ">Kyle Kuzma</h5>
+                                <p class="text-muted ">December 7</p>
+                            </div>
+                        </div>
+                        <img class="card-img-top " src="/Users/ysawiris/dev/social_media/post-image.png " style="width: 500px; " alt="Card image cap ">
+                        <div class="card-body pt-1 ">
+                            <p class="card-text text-dark ">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                            <div class="col text-center ">
+                                <div class=" btn-group-fluid btn-group-sm " role="group " aria-label="Basic example ">
+                                    <button type="button " class="btn btn-secondary ">Like</button>
+                                    <button type="button " class="btn btn-secondary ">Comment</button>
+                                    <button type="button " class="btn btn-secondary ">Share</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--POST NUMBER 2-->
+                    <div class="card " style="width: 500px;">
+                        <div class="row " style="margin: 0; padding: 10px;">
+                            <img class="rounded-circle " style="height: 75px; padding: 5px; " src="/Users/ysawiris/dev/social_media/kuz-profile.jpeg " alt="Circle image ">
+                            <div class="col-sm-8 ">
+                                <h5 class="text-dark " style="margin: 0; ">Kyle Kuzma</h5>
+                                <p class="text-muted ">December 7</p>
+                            </div>
+                        </div>
+                        <img class="card-img-top " src="/Users/ysawiris/dev/social_media/post-image.png " style="width: 500px; " alt="Card image cap ">
+                        <div class="card-body pt-1 ">
+                            <p class="card-text text-dark ">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                            <div class="col text-center ">
+                                <div class=" btn-group-fluid btn-group-sm " role="group " aria-label="Basic example ">
+                                    <button type="button " class="btn btn-secondary ">Like</button>
+                                    <button type="button " class="btn btn-secondary ">Comment</button>
+                                    <button type="button " class="btn btn-secondary ">Share</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 
 </body>

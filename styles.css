@@ -8,9 +8,22 @@
     right: 0;
 }
 
-.test {}
+.brand {
+    position: absolute;
+    display: block;
+    left: 50%;
+    margin-left: -100px;
+}
+
+.logout {
+    position: absolute;
+    right: 25px;
+}
 
 .profile {
     margin-left: 25px;
-    position: center;
+}
+
+.bar {
+    margin-right: 5px;
 }
