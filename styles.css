@@ -1,0 +1,16 @@
+.container {
+    position: relative;
+}
+
+.tests {
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+}
+
+.test {}
+
+.profile {
+    margin-left: 25px;
+    position: center;
+}
